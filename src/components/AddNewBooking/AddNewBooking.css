@@ -1,0 +1,23 @@
+
+.add-services h2 {
+    color: #fffffe;
+    margin-bottom: 20px;
+}
+
+.add-services form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-services form input, textarea {
+    text-align: center;
+    width: 45%;
+    margin: 12px;
+    padding: 10px;
+    background-color: #ffffff;
+   
+    border: 4px solid #fa1688;
+    transition: all .2s linear;
+}
+

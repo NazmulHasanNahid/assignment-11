@@ -1,0 +1,14 @@
+.login {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.login button {
+    padding: 40px 60px;
+    border: 2px solid #0d9ef1;
+}
+
+.login button img {
+    width: 300px;
+}
+
