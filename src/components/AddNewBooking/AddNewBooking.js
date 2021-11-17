@@ -8,7 +8,7 @@ import Button from "@restart/ui/esm/Button";
 const AddNewBooking = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = (data) => {
-        const uri = `http://localhost:5000/allbooking`;
+        const uri = `https://calm-basin-18890.herokuapp.com/allbooking`;
         fetch(uri, {
             method: "POST",
             headers: {

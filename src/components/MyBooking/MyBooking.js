@@ -9,7 +9,7 @@ const MyBooking = () => {
     const { user } = useAuth();
     const [allBooking, setAllBooking] = useState([]);
     useEffect(() => {
-        const uri = `http://localhost:5000/mybooking/${user?.email}`;
+        const uri = `https://calm-basin-18890.herokuapp.com/mybooking/${user?.email}`;
         fetch(uri)
             .then((res) => res.json())
             .then((data) => setAllBooking(data));
@@ -19,7 +19,7 @@ const MyBooking = () => {
         const proceed = window.confirm("are you sure, you want to delete!!!");
         if (proceed) {
             fetch(
-                `http://localhost:5000/mybooking/${id}`,
+                `https://calm-basin-18890.herokuapp.com/mybooking/${id}`,
                 {
                     method: "DELETE",
                 }

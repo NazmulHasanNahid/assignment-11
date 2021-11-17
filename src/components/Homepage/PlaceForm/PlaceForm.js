@@ -42,7 +42,7 @@ const PlaceForm = (props) => {
             phone,
         };
         // console.log(saveBooking);
-        const uri = "http://localhost:5000/placebooking";
+        const uri = "https://calm-basin-18890.herokuapp.com/placebooking";
         fetch(uri, {
             method: "POST",
             headers: {

@@ -11,7 +11,7 @@ const Destinations = () => {
     const [places, setPlaces] = useState([]);
 
     useEffect(() => {
-        const uri = "http://localhost:5000/allbooking";
+        const uri = "https://calm-basin-18890.herokuapp.com/allbooking";
         fetch(uri)
             .then((res) => res.json())
             .then((data) => {

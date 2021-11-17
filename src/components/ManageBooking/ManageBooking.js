@@ -7,7 +7,7 @@ import { Card, Col, Container, Row } from "react-bootstrap";
 const ManageBooking = () => {
     const [manageeBooking, setManageeBooking] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:5000/manageallorder")
+        fetch("https://calm-basin-18890.herokuapp.com/manageallorder")
             .then((res) => res.json())
             .then((data) => setManageeBooking(data));
     }, [manageeBooking]);
@@ -16,7 +16,7 @@ const ManageBooking = () => {
         const proceed = window.confirm("are you sure, you want to delete!!!");
         if (proceed) {
             fetch(
-                `http://localhost:5000/mybooking/${id}`,
+                `https://calm-basin-18890.herokuapp.com/mybooking/${id}`,
                 {
                     method: "DELETE",
                 }
@@ -40,7 +40,7 @@ const ManageBooking = () => {
         );
         updatestatus.status = "approved";
 
-        const uri = `http://localhost:5000/mybooking/${id}`;
+        const uri = `https://calm-basin-18890.herokuapp.com/mybooking/${id}`;
         fetch(uri, {
             method: "PUT",
             headers: {
