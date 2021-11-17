@@ -1,6 +1,8 @@
 import React from 'react';
 import { Accordion, Col, Container, Row } from 'react-bootstrap';
 import tour from '../../../img/tour.png'
+import Zoom from 'react-reveal/Zoom';
+
 
 const Experience = () => {
     return (
@@ -8,7 +10,9 @@ const Experience = () => {
           
             <Row>
                 <Col md={6} xs={12}>
+                <Zoom left>   
                 <img className="img-fluid mb-5" style={{width:'800px'}} src={tour} alt="" />
+                </Zoom>
                 </Col>
                 <Col md={6} xs={12}>
                 <Accordion  className="mt-5 w-75" defaultActiveKey="0">
