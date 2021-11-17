@@ -1,6 +1,8 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
+import Rotate from 'react-reveal/Rotate';
+
 import { Card, Col, Container, Row } from "react-bootstrap";
 
 
@@ -63,6 +65,7 @@ const ManageBooking = () => {
                 <Row xs={1} md={3} className="g-4">
                     {manageeBooking.map((booking) => (
                         <Col key={booking?._id}>
+                        <Rotate bottom right>
                             <Card className=" shadow-lg">
                                 <Card.Img
                                     variant="top"
@@ -97,6 +100,7 @@ const ManageBooking = () => {
                                     </button>
                                 </Card.Body>
                             </Card>
+                        </Rotate>
                         </Col>
                     ))}
                 </Row>

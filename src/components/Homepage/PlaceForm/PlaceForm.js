@@ -1,6 +1,6 @@
 import React from "react";
 import { useRef } from "react";
-// import { useState } from "react";
+import Fade from 'react-reveal/Fade';
 
 import useAuth from "../../../hooks/useAuth";
 import "./PlaceForm.css";
@@ -61,6 +61,7 @@ const PlaceForm = (props) => {
 
     return (
         <div className="confirm-booking-form mt-3">
+            <Fade bottom>
             <form onSubmit={handleSubmit}>
                 <input
                     type="text"
@@ -128,6 +129,7 @@ const PlaceForm = (props) => {
                     className="confirmbutton"
                 />
             </form>
+            </Fade>
         </div>
     );
 };

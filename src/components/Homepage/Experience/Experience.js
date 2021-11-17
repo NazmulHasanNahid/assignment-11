@@ -2,6 +2,8 @@ import React from 'react';
 import { Accordion, Col,  Row } from 'react-bootstrap';
 import tour from '../../../img/tour.png'
 import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
+
 
 
 const Experience = () => {
@@ -15,6 +17,7 @@ const Experience = () => {
                 </Zoom>
                 </Col>
                 <Col md={6} xs={12}>
+                <Fade bottom>
                 <Accordion  className="mt-5 w-75" defaultActiveKey="0">
                 <Accordion.Item eventKey="0">
                     <Accordion.Header>What We Do</Accordion.Header>
@@ -35,6 +38,7 @@ const Experience = () => {
                     </Accordion.Body>
                 </Accordion.Item>
                 </Accordion>
+                </Fade>
                 </Col>
             </Row>
            

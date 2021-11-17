@@ -2,6 +2,8 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import Rotate from 'react-reveal/Rotate';
+
 import useAuth from "../../hooks/useAuth";
 
 
@@ -43,6 +45,7 @@ const MyBooking = () => {
                 <Row xs={1} md={3}  className="g-4 p-5">
                     {allBooking.map((singleBooking) => (
                         <Col key={singleBooking?._id}>
+                            <Rotate bottom right>
                             <div className="bg- shadow-lg h-100 w-100 text-center  border  rounded p-3 ">
                                 <div>
                                     <img style={{width:'100%'}} src={singleBooking?.placeImg} alt="" />
@@ -69,6 +72,7 @@ const MyBooking = () => {
                                     </button>
                                 </div>
                             </div>
+                            </Rotate>
                         </Col>
                     ))}
                 </Row>

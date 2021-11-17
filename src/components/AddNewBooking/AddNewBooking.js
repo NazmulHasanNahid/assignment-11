@@ -4,6 +4,8 @@ import "./AddNewBooking.css";
 import bookingImg from '../../../src/img/BookingImg.png'
 import { Col, Row } from "react-bootstrap";
 import Button from "@restart/ui/esm/Button";
+import Rotate from 'react-reveal/Rotate';
+
 
 const AddNewBooking = () => {
     const { register, handleSubmit, reset } = useForm();
@@ -30,6 +32,7 @@ const AddNewBooking = () => {
                 ADD NEW BOOKING
             </h2>
             <Col md={6} xs={12}>
+            <Rotate bottom right>    
             <div className=" mt-5 add-services">
             
 
@@ -58,9 +61,10 @@ const AddNewBooking = () => {
                 <Button type="submit" value="submit" className="btn btn-info text-white fw-bold w-25"> Submit </Button>
             </form>
         </div>
+        </Rotate>
             </Col>
             <Col md={6} xs={12}>
-             <img className="img-fluid" src={bookingImg} alt="" />
+            <Rotate bottom right>    <img className="img-fluid" src={bookingImg} alt="" />  </Rotate>
             </Col>
         </Row>
     );
