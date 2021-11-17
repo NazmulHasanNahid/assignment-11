@@ -1,9 +1,7 @@
 import React from "react";
-// import { Button } from "react-bootstrap";
 import { useHistory, useLocation } from "react-router";
 import useAuth from "../../hooks/useAuth";
 import Fade from 'react-reveal/Fade';
-
 import "./LogIn.css";
 import loginImg from '../../img/login.png';
 

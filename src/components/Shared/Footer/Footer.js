@@ -1,8 +1,6 @@
 import React from "react";
 import Fade from 'react-reveal/Fade';
-
 import "./Footer.css";
-
 const Footer = () => {
     return (
         <div className="main-footer bg-info">
