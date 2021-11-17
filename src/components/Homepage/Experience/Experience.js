@@ -1,5 +1,5 @@
 import React from 'react';
-import { Accordion, Col, Container, Row } from 'react-bootstrap';
+import { Accordion, Col,  Row } from 'react-bootstrap';
 import tour from '../../../img/tour.png'
 import Zoom from 'react-reveal/Zoom';
 
