@@ -1,11 +1,9 @@
 import React from "react";
-import useAuth from "../../../hooks/useAuth";
 import Fade from 'react-reveal/Fade';
 
 import "./Footer.css";
 
 const Footer = () => {
-    const { user } = useAuth();
     return (
         <div className="main-footer bg-info">
         <div className="container text-content">
