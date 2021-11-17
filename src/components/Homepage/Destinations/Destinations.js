@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
+import Fade from 'react-reveal/Fade';
+
 import Zoom from 'react-reveal/Zoom';
 
 import "./Destinations.css";
@@ -22,10 +24,11 @@ const Destinations = () => {
 
     return (
         <div className="mt-5 mb-5">
+            <Fade bottom> 
             <h4 className="text-center text-info">Best Trip We Can Provide</h4>
             <h1 className="text-center">
-                <span className="text-warning fw-bold ">Choose Your Perfect Trip</span>
-            </h1>
+            <span className="text-warning fw-bold ">Choose Your Perfect Trip</span></h1>
+            </Fade>
             <Container>
            
                 <Row xs={1} md={2} lg={3} className="g-4 ">
@@ -62,8 +65,8 @@ const Destinations = () => {
                
                 
             </Container>
-               <h4 className="text-info text-center mt-5">About Something Our Services</h4>
-               <h1 className="text-warning text-center">You Should Know About Our Services </h1>
+            <Fade right>  <h4 className="text-info text-center mt-5">About Something Our Services</h4>
+               <h1 className="text-warning text-center">You Should Know About Our Services </h1>  </Fade>
         </div>
     );
 };

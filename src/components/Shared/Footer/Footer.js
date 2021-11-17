@@ -1,7 +1,7 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
+import Fade from 'react-reveal/Fade';
+
 import "./Footer.css";
 
 const Footer = () => {
@@ -9,10 +9,13 @@ const Footer = () => {
     return (
         <div className="main-footer bg-info">
         <div className="container text-content">
+        <Fade bottom>
             <div className="row">
+             
                 
                <div className="col-md-3 col-sm-6">
-                    <h4 className="fw-bold">SERVICE</h4>
+              
+                <h4 className="fw-bold">SERVICE</h4>
                 <ul className="list-unstyled">
                     <li>Designer</li>
                     <li>Interactions</li>
@@ -23,7 +26,7 @@ const Footer = () => {
                     <li>learning</li>
                 </ul>
                 </div>
-                 
+              
                <div className="col-md-3 col-sm-6">
                      <h4 className="fw-bold">COMPANY</h4>
                 <ul className="list-unstyled">
@@ -65,7 +68,7 @@ const Footer = () => {
                 </div>
             </div>
            
-            
+            </Fade>
         </div>
     </div>
 );

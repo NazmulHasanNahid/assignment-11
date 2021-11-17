@@ -2,8 +2,10 @@ import React from "react";
 // import { Button } from "react-bootstrap";
 import { useHistory, useLocation } from "react-router";
 import useAuth from "../../hooks/useAuth";
+import Fade from 'react-reveal/Fade';
+
 import "./LogIn.css";
-import loginImg from '../../img/login.png'
+import loginImg from '../../img/login.png';
 
 const LogIn = () => {
     const { setIsLoading, signInUsingGoogle } = useAuth();
@@ -25,10 +27,10 @@ const LogIn = () => {
     return (
         <div className="login">
            
-            <button onClick={handleGoogleSignIn}>
+           <Fade top> <button onClick={handleGoogleSignIn}>
                 <img src={loginImg} alt="" />
                 <h4 className="text-info fw-bold">Sign in</h4>
-            </button>
+            </button>  </Fade>
         </div>
     );
 };
