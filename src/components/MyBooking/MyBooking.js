@@ -40,10 +40,10 @@ const MyBooking = () => {
         <div>
             <h1 className="text-center text-info mt-5"> Booked Information </h1>
             <Container className="mt-5">
-                <Row xs={1} md={2} className="g-2">
+                <Row xs={1} md={3}  className="g-4 p-5">
                     {allBooking.map((singleBooking) => (
                         <Col key={singleBooking?._id}>
-                            <div className="bg- shadow-lg h-100 w-75 text-center  border  rounded p-3 ">
+                            <div className="bg- shadow-lg h-100 w-100 text-center  border  rounded p-3 ">
                                 <div>
                                     <img style={{width:'100%'}} src={singleBooking?.placeImg} alt="" />
                                 </div>
